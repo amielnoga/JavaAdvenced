@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EX1Controller">
+   <children>
+      <TextField fx:id="questionId" prefHeight="114.0" prefWidth="600.0" />
+      <RadioButton fx:id="answer1" mnemonicParsing="false" prefHeight="50.0" prefWidth="860.0" text="RadioButton">
+         <toggleGroup>
+            <ToggleGroup fx:id="answers" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="answer2" mnemonicParsing="false" prefHeight="50.0" prefWidth="892.0" text="RadioButton" toggleGroup="$answers" />
+      <RadioButton fx:id="answer3" mnemonicParsing="false" prefHeight="50.0" prefWidth="932.0" text="RadioButton" toggleGroup="$answers" />
+      <RadioButton fx:id="answer4" mnemonicParsing="false" prefHeight="50.0" prefWidth="934.0" text="RadioButton" toggleGroup="$answers" />
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="565.0" minWidth="10.0" prefWidth="524.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="291.0" minWidth="10.0" prefWidth="76.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#continuePressed" text="Continue" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</VBox>
